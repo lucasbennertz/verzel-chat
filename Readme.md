@@ -76,6 +76,10 @@ O servidor backend estará disponível em `http://localhost:3000`.
    npm start
    ```
 
+   **Nota:** Para desenvolvimento local, certifique-se de que as requisições do frontend estejam configuradas para apontar para `http://localhost:3000` (onde o backend está rodando).
+
+   Para isso, edite o arquivo `frontend/src/app/app/chat/chat.ts` e altere a variável `API_BASE` para `http://localhost:3000/api`.
+
 A aplicação frontend estará disponível em `http://localhost:4200`.
 
 ## Endpoints da API
@@ -88,3 +92,8 @@ A aplicação frontend estará disponível em `http://localhost:4200`.
       "message": "string"
     }
     ```
+
+## URLs de Acesso (Deploy Vercel)
+
+- **Frontend:** https://verzel-front-o8cyjikdn-lucasbennertzs-projects.vercel.app/
+- **Backend:** https://back-verzel-ctq358xz8-lucasbennertzs-projects.vercel.app/
